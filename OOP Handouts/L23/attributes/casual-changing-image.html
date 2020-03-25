@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<h1 id="topHeading" class="first">Example Heading</h1>
+
+<div><img id="photo" src="memchu.jpg" alt="Photo" title="Memorial Church" /></div>
+
+<p>
+<input type="button" value="MemChu" onclick="changeFirst();" />
+<input type="button" value="Gates" onclick="changeSecond();" />
+</p>
+
+<script type="text/javascript">
+//<![CDATA[
+
+function changeFirst() {
+    var imageNode = document.getElementById("photo");
+    imageNode.src = "memchu.jpg";
+    imageNode.title = "Memorial Church"; 
+}
+
+function changeSecond() {
+    var imageNode = document.getElementById("photo");
+    imageNode.src = "gates.jpg";
+    imageNode.title = "Gates Computer Science Building"; 
+}
+
+//]]>
+</script>
+</body>
+</html>

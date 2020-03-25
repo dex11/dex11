@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Track Typing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+
+<body>
+
+<h1 id="output">Tracking Typing</h1>
+
+<p>This example shows tracking of keystrokes.  Output resets if the user pauses for over 0.5 seconds.</p>
+
+<script type="text/javascript">
+//<![CDATA[
+
+function setOutput(str) {
+	var outElem = document.getElementById("output");
+	outElem.innerHTML = str;
+}
+
+var lastKeyPressTime = 0;
+var userInput = "";
+var tolerance = 500;
+var ie = false;
+
+function handleKeyPress(evt) {
+	var ch;
+	
+	if (!evt)
+		ch = event.keyCode; // IE
+	else ch = evt.charCode; // W3C
+	
+	var time = (new Date()).getTime();
+	if (time - lastKeyPressTime < tolerance) {
+		userInput = userInput + String.fromCharCode(ch);
+	} else {
+		userInput = String.fromCharCode(ch);
+	}
+	setOutput(userInput);
+	
+	lastKeyPressTime = time;
+}
+
+/// SETUP FUNCTIONS
+
+document.onkeypress = handleKeyPress;
+
+//]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Popup Example</title>
+<script type="text/JavaScript">
+var name = "";
+var phone = "";
+
+function enterInfo() {
+  name = document.getElementById("info").name.value;
+  phone = document.getElementById("info").phone.value;
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<form id="info" action="">
+<table>
+<tr><td>Name:</td>
+    <td><input name="name" type="text" /></td>
+</tr>
+<tr><td>Phone:</td>
+    <td><input name="phone" type="text" /></td>
+    <td><input type="button" value="Enter" onclick="enterInfo();" />
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

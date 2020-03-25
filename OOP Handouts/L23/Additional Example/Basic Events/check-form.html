@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Simple Form Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<h1>Enter Information</h1>
+<form id="info" onsubmit="return checkForm();" action="">
+<table>
+  <tr><td>Name:</td>
+      <td><input type="text" name="name" size="12" /></td>
+      <td></td>
+  </tr>
+  <tr><td>Phone:</td>
+      <td><input type="text" name="phone" size="12" /></td>
+      <td><input type="submit" value="Submit" /></td>
+</tr>
+</table>
+
+</form>
+
+<script type="text/JavaScript">
+//<![CDATA[
+
+function checkForm() {
+  var name = document.getElementById("info").name.value;
+  var phone = document.getElementById("info").phone.value;
+
+  if (name == "") {
+    alert("Please enter your name.");
+    return false;
+  }
+  if (phone == "") {
+    alert("Please enter your phone number.");
+    return false;
+  }
+  return true;
+}
+
+//]]>
+</script>
+
+</body>
+</html>

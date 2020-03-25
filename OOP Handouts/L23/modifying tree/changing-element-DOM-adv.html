@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+
+<body>
+<h1 id="topHeading">Example Heading</h1>
+
+<div>
+<input type="button" value="Change" onclick="change();" />
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+function change() {
+    var headingNode = document.getElementById("topHeading");
+    var newHeadingText = document.createElement("span");
+		// I create span so there's somewhere to put all the other nodes before calling replaceChild
+		// alternatively could do a series of appendChild calls
+	
+    var newNode = document.createElement("em");
+    var newText = document.createTextNode("Go");
+    newNode.appendChild(newText);
+    newHeadingText.appendChild(newNode);
+	
+    newText = document.createTextNode(" ");
+    newHeadingText.appendChild(newText);
+	
+    newNode = document.createElement("strong");
+    newText = document.createTextNode("Stanford");
+    newNode.appendChild(newText);
+    newHeadingText.appendChild(newNode);
+		
+    var oldTextNode = headingNode.firstChild;
+    headingNode.replaceChild(newHeadingText,oldTextNode);
+}
+
+//]]>
+</script>
+
+</body>
+</html>
+

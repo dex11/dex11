@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Celsius to Fahrenheit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script type="text/javascript">
+//<![CDATA[
+
+function cToF() {
+	formElement = document.getElementById("convertForm");
+	
+	celsius = parseFloat(formElement.celsius.value);
+	fahrenheit = celsius * 9 / 5 + 32;
+	
+	formElement.fahrenheit.value = fahrenheit;
+}
+
+//]]>
+</script>
+
+<style type="text/css">
+/*<![CDATA[*/
+
+#convert {
+	width: 400px;
+}
+
+label, .submitspace {
+	float: left;
+	width: 80px;
+}
+
+div {
+	clear: both;
+	margin: 10px;
+}
+
+/*]]>*/
+</style>
+
+</head>
+
+<body>
+<form id="convertForm" action="">
+<fieldset id="convert">
+<legend>Celsius to Fahrenheit Conversion</legend>
+<div><label for="celsius">Celsius:</label>
+     <input type="text" id="celsius" name="celsius" /></div>
+<div><label for="fahrenheit">Fahrenheit:</label>
+     <input type="text" id="fahrenheit" name="fahrenheit" /></div>
+<div><span class="submitspace">&nbsp;</span>
+     <input type="button" value="Convert" onclick="cToF();" /></div>
+</fieldset>
+</form>
+</body>
+</html>

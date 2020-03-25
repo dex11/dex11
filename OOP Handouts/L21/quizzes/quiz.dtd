@@ -1,0 +1,27 @@
+<!ELEMENT quiz name description (question)+>
+
+<!ATTLIST quiz
+	random		(true | false)		"true"
+	one-page	(true | false)		"true"
+	immediate-correction	(true | false)	"false"
+	practice-mode			(true | false)	"true"
+	>
+	
+<!ELEMENT question (query | image-location) option* (answer | answer-list)>
+
+<!ATTLIST question 
+	type		(question-response | fill-in-blank | multiple-choice | picture-response)  #REQUIRED
+	>
+	
+<!ELEMENT query #PCDATA* blank* #PCDATA>
+<!ELEMENT blank EMPTY>
+
+<!ELEMENT image-location #PCDATA>
+
+<!ELEMENT option #PCDATA>
+<!ATTLIST option answer (answer) IMPLIED>
+
+<!ELEMENT answer #PCDATA>
+<!ATTLIST answer preferred (preferred) IMPLIED>
+
+<!ELEMENT answer-list answer+>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Color Picker Website</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+body {font-family: sans-serif}
+.title {font-size: 12pt; font-weight: bold}
+</style>
+</head>
+
+<body>
+<h1>Color Picker Website</h1>
+
+<div>
+<form id="main" action="">
+<table>
+<tr><td class="title">Foreground</td>
+    <td><input type="text" name="foreground" onchange="changeColors()" /></td></tr>
+<tr><td class="title">Background</td>
+    <td><input type="text" name="background" onchange="changeColors()" /></td></tr>
+</table>
+</form>
+</div>
+
+<script type="text/javascript">
+
+function changeColors() {
+    document.fgColor = document.getElementById("main").foreground.value;
+    document.bgColor = document.getElementById("main").background.value;
+}
+
+</script>
+</body>
+</html>

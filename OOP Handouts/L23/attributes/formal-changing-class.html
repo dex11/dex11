@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+
+.first {
+	background-color: red;
+}
+
+.second {
+	background-color: blue;
+}
+
+</style>
+</head>
+<body>
+<h1 id="topHeading" class="first">Example Heading</h1>
+
+<div>
+<input type="button" value="First Class" onclick="changeFirst();" />
+<input type="button" value="Second Class" onclick="changeSecond();" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+// 
+
+function changeFirst() {
+    var headingNode = document.getElementById("topHeading");
+    headingNode.setAttribute("className","first");  // IE
+    headingNode.setAttribute("class","first");  	// Firefox, Chrome, Safari
+}
+
+function changeSecond() {
+    var headingNode = document.getElementById("topHeading");
+    headingNode.setAttribute("className","second");  // IE
+    headingNode.setAttribute("class","second");  	// Firefox, Chrome, Safari
+}
+
+//]]>
+</script>
+</body>
+</html>

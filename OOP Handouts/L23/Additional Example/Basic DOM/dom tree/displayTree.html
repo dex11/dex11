@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+//<![CDATA[
+function display() {
+    alert(displayTree(document.documentElement,0));
+}
+
+function displayTree(node,depth) {
+    var displayStr = "";
+	for (var i = 0; i < depth; i++) {
+	  displayStr += "   ";
+	}
+	displayStr += node.nodeName + ": " + node.nodeValue + "\n";
+	if (node.childNodes)
+        for (var i = 0; i < node.childNodes.length; i++)
+		    displayStr += displayTree(node.childNodes[i],depth+1);
+    return displayStr;
+}
+//]]>
+</script>
+</head>
+
+<body onload="display();">
+<h1>Stanford University</h1>
+
+<h2><em>Computer</em> Science</h2>
+
+<p>Welcome to the Stanford Computer 
+Science Department!</p>
+<div><img src="gates.jpg" alt="Gates Photo" /></div>
+</body>
+</html>

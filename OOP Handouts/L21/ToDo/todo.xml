@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/css" href="todo.css"?>
+<!DOCTYPE list 
+     PUBLIC "-//Stanford//DTD CS193C ToDo List//EN"  
+     "todo.dtd">
+<list xmlns="//www.stanford.edu/classes/cs193c/todo">
+<item priority="high">
+  <name>Work on CS108 Project</name>
+  <due>December 3</due>
+</item>
+<item priority="low">
+  <name>Come up with a better name than Quiz-O-Rama</name>
+</item>
+<item>
+  <name>Dorm Staff Meeting</name>
+  <location>RF Apartment</location>
+</item>
+</list>

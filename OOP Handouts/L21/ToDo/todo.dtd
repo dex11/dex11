@@ -1,0 +1,10 @@
+<!ELEMENT list (item+)>
+
+<!ELEMENT item (name, time?, due?, location?)>
+<!ATTLIST item
+        priority    (high | medium | low)    "medium">
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT due (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+

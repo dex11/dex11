@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Meals</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+
+function calculateTotal() {
+  var total = 0;
+  if (document.getElementById("meals").friday.checked)
+    total = total + 8;
+  if (document.getElementById("meals").saturday.checked)
+    total = total + 8;
+  if (document.getElementById("meals").sunday.checked)
+    total = total + 8;
+  document.getElementById("meals").total.value = total;
+}
+
+</script>
+<style type="text/css">
+h1 {font-size: large;}
+td {padding: 3px;}
+div {padding: 3px;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<form id="meals" action="">
+<h1>Meals desired ($8 each):</h1>
+<table>
+<tr><td>Friday Dinner</td>
+    <td><input type="checkbox" name="friday" /></td>
+</tr>
+<tr><td>Saturday Dinner</td> 
+    <td><input type="checkbox" name="saturday" /></td>
+</tr>
+<tr><td>Sunday Dinner</td>   
+    <td><input type="checkbox" name="sunday" /></td>
+</tr>
+</table>
+<div>
+<input type="text" size="5" name="total" />
+<input type="button" value="Total" onclick="calculateTotal();" />
+</div>
+</form>
+</body>
+</html>

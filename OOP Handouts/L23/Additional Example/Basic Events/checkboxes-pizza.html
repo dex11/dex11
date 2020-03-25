@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Pizza Ingredients</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/JavaScript">
+//<![CDATA[
+function calculateTotal() {
+  var pizzaForm = document.getElementById("pizza");
+  var total=8;
+  for (var i=0; i < 7; i++) {
+    if (pizzaForm.elements[i].checked) {
+      total = total + 0.75;
+    }
+  }
+  pizzaForm.total.value = total;
+}
+//]]>
+</script>
+</head>
+<body>
+<h2>Choose Pizza Ingredients</h2>
+<div>
+<form id="pizza" action="">
+<p>
+<label><input type="checkbox" onclick="calculateTotal();" />Pepperoni</label>
+<label><input type="checkbox" onclick="calculateTotal();" />Sausage</label>
+<label><input type="checkbox" onclick="calculateTotal();" />Artichoke</label>
+<label><input type="checkbox" onclick="calculateTotal();" />Eggplant</label>
+<label><input type="checkbox" onclick="calculateTotal();" />Olives</label>
+<label><input type="checkbox" onclick="calculateTotal();" />Onions</label>
+<label><input type="checkbox" onclick="calculateTotal();" />Mushrooms</label>
+</p>
+<p><b>Total Price:</b> 
+   <input type="text" name="total" value="8" size="5" />
+</p>
+<p><i>$8 Cheese Only<br />
+      $0.75 for Each Ingredient</i>
+</p>
+</form>
+</div>
+</body>
+</html>
