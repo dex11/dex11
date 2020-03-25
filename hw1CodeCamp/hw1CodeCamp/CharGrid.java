@@ -55,7 +55,6 @@ public class CharGrid {
 		for(int row = 0; row < grid.length; row++){
 			for(int col = 0; col < grid[0].length; col++){
 				HashSet<Integer> data = new HashSet<Integer>();
-				System.out.println("    " + grid[row][col] + " " + row +" "+ col);
 				int cmp = countHelper(col, row, grid[row][col], 0);
 				if(cmp != 0){
 					data.add(cmp);
@@ -79,7 +78,6 @@ public class CharGrid {
 			if(x < 0 || x >= grid[0].length || y < 0 || y >= grid.length || grid[y][x] != ch ) break;
 			ans++;
 		}
-		System.out.println(ans);
 		return ans;
 	}
 	

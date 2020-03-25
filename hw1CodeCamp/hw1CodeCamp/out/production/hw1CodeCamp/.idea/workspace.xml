@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34561881-93f9-4d97-9d4d-6aab5a56aad0" name="Default Changelist" comment="" />
+    <list default="true" id="2bb06a26-b0b0-4d80-b993-fdbde39a4e3d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw1CodeCamp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hw1CodeCamp.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1ZZmkLhx2NQ5TO5UlEjh9Y8jOr3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1Zbp6pLzQlrdO7bw4T2qOdZJH1n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -19,12 +28,11 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.CharGridTest">
+  <component name="RunManager">
     <configuration name="CharGridTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hw1CodeCamp" />
       <option name="PACKAGE_NAME" value="" />
@@ -34,24 +42,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests" type="JUnit" factoryName="JUnit">
-      <module name="hw1CodeCamp" />
-      <useClassPathOnly />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <option name="PARAMETERS" value="" />
-      <patterns>
-        <pattern testClass="@.test" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="JUnit.Tests" />
-      <item itemvalue="JUnit.CharGridTest" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CharGridTest" />
@@ -63,58 +53,22 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="34561881-93f9-4d97-9d4d-6aab5a56aad0" name="Default Changelist" comment="" />
-      <created>1585055131673</created>
+      <changelist id="2bb06a26-b0b0-4d80-b993-fdbde39a4e3d" name="Default Changelist" comment="" />
+      <created>1585117475860</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1585055131673</updated>
+      <updated>1585117475860</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1186" y="147" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585055194805">
-      <screen x="-1280" y="0" width="1280" height="984" />
+    <state x="166" y="27" width="1024" height="698" key="SettingsEditor" timestamp="1585117591636">
+      <screen x="0" y="27" width="1366" height="698" />
     </state>
-    <state x="-1186" y="147" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1280.0.1280.984@-1280.0.1280.984" timestamp="1585055194805" />
-    <state x="-810" y="185" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1585055298754">
-      <screen x="-1280" y="0" width="1280" height="984" />
+    <state x="166" y="27" width="1024" height="698" key="SettingsEditor/0.27.1366.698@0.27.1366.698" timestamp="1585117591636" />
+    <state x="350" y="272" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585117583841">
+      <screen x="0" y="27" width="1366" height="698" />
     </state>
-    <state x="-810" y="185" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040/-1280.0.1280.984@-1280.0.1280.984" timestamp="1585055298753" />
-    <state x="-934" y="233" key="FileChooserDialogImpl" timestamp="1585055378825">
-      <screen x="-1280" y="0" width="1280" height="984" />
-    </state>
-    <state x="-934" y="233" key="FileChooserDialogImpl/0.0.1920.1040/-1280.0.1280.984@-1280.0.1280.984" timestamp="1585055378825" />
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1585055474292">
-      <screen x="-1280" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1280.0.1280.984@-1280.0.1280.984" timestamp="1585055474292" />
-    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1585055474292">
-      <screen x="-1280" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1920.1040/-1280.0.1280.984@-1280.0.1280.984" timestamp="1585055474292" />
-    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1585055474292">
-      <screen x="-1280" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1920.1040/-1280.0.1280.984@-1280.0.1280.984" timestamp="1585055474292" />
-    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1585055474292">
-      <screen x="-1280" y="0" width="1280" height="984" />
-    </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1920.1040/-1280.0.1280.984@-1280.0.1280.984" timestamp="1585055474292" />
-    <state x="-1160" y="66" key="SettingsEditor" timestamp="1585055441065">
-      <screen x="-1280" y="0" width="1280" height="984" />
-    </state>
-    <state x="-1160" y="66" key="SettingsEditor/0.0.1920.1040/-1280.0.1280.984@-1280.0.1280.984" timestamp="1585055441065" />
-    <state x="-843" y="325" key="com.intellij.ide.util.TipDialog" timestamp="1585061970642">
-      <screen x="-1280" y="0" width="1280" height="984" />
-    </state>
-    <state x="-843" y="325" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1280.0.1280.984@-1280.0.1280.984" timestamp="1585061970642" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1585055134633" />
-    <state x="-936" y="385" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585055427992">
-      <screen x="-1280" y="0" width="1280" height="984" />
-    </state>
-    <state x="-936" y="385" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1280.0.1280.984@-1280.0.1280.984" timestamp="1585055427992" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hw1CodeCamp$CharGridTest.ic" NAME="CharGridTest Coverage Results" MODIFIED="1585055474168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <state x="350" y="272" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1366.698@0.27.1366.698" timestamp="1585117583841" />
   </component>
 </project>
