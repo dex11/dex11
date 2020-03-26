@@ -12,7 +12,18 @@ public class StringCode {
 	 * @return max run length
 	 */
 	public static int maxRun(String str) {
-		return 0; // YOUR CODE HERE
+		int ans = 0;
+		int cur = 0;
+		char mem = 'a';
+		for(int i = 0; i < str.length(); i++){
+			if(str.charAt(i) == mem) cur++;
+			else{
+				mem = str.charAt(i);
+				if(cur > ans) ans = cur;
+				cur = 1;
+			}
+		}
+		return ans;
 	}
 
 	
@@ -24,7 +35,19 @@ public class StringCode {
 	 * @return blown up string
 	 */
 	public static String blowup(String str) {
-		return null; // YOUR CODE HERE
+		String ans = "";
+		if(str.equals(ans)) return str;
+		for(int i = 0 ; i < str.length() - 1; i++){
+			if(Character.isDigit(str.charAt(i))) {
+				for (int j = 0; j < Integer.parseInt(String.valueOf(str.charAt(i))); j++) {
+					ans = ans + str.charAt(i + 1);
+				}
+			}else{
+				ans = ans + str.charAt(i);
+			}
+		}
+		if(!Character.isDigit(str.charAt(str.length() - 1))) ans = ans + str.charAt(str.length() - 1);
+		return ans;
 	}
 	
 	/**
@@ -34,6 +57,21 @@ public class StringCode {
 	 * Compute this in linear time using a HashSet. Len will be 1 or more.
 	 */
 	public static boolean stringIntersect(String a, String b, int len) {
-		return false; // YOUR CODE HERE
+		HashSet<String> d1 = new HashSet<>();
+		HashSet<String> d2 = new HashSet<>();
+
+		for(int i = 0; i < a.length() - len + 1; i++){
+			d1.add(a.substring(i, i + len));
+		}
+
+		for(int i = 0; i < b.length() - len + 1; i++){
+			d2.add(b.substring(i, i + len));
+		}
+
+		for(String mem : d2){
+			if(d1.contains(mem)) return true;
+		}
+
+		return false;
 	}
 }
